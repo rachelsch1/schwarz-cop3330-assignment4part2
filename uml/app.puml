@@ -1,0 +1,88 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+class ListViewController {
+    initialize()
+    initTable()
+    initCols()
+    editableCols()
+    loadData()
+    loadNewData()
+    setTitle()
+    itemAdded()
+    backButtonClicked()
+    deleteItemButtonClicked()
+    deleteListButtonClicked()
+    listTitleEdited()
+    loadComplete()
+    loadIncomplete()
+    showCompleteButtonClicked()
+    showIncompleteButtonClicked()
+    showAllButtonClicked()
+    markedComplete()
+    markedIncomplete()
+    saveListButtonClicked()
+}
+
+class ListViewOpenController {
+    selectedList: List
+
+    initialize()
+    initTable()
+    initCols()
+    editableCols()
+    loadData()
+    itemAdded()
+    backButtonClicked()
+    deleteItemButtonClicked()
+    deleteListButtonClicked()
+    listTitleEdited()
+    loadComplete()
+    loadIncomplete()
+    showCompleteButtonClicked()
+    showIncompleteButtonClicked()
+    showAllButtonClicked()
+    markedComplete()
+    markedIncomplete()
+    saveListButtonClicked()
+}
+
+class MainClass {
+ main()
+ start()
+}
+
+class List {
+    title: String
+    itemList: ObservableList<Item>
+    directory: String
+
+    List()
+    getTitle()
+    setTitle()
+    setDirectory()
+    createFile()
+    loadList()
+}
+
+class Item {
+    description: String
+    dueDate: DatePicker
+    status: CheckBox
+
+    Item()
+    setDescription()
+    getDescription()
+    setDueDate()
+    getDueDate()
+    getStatus()
+    setStatus()
+}
+
+javafx.Application <|-- MainClass
+MainClass <|-- List
+List -- ListViewController
+List -- ListViewOpenController
+List - Item
+
+@enduml

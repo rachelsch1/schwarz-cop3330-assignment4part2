@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="514.0" prefWidth="624.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ucf.assignments.ListViewController">
+   <children>
+      <TextField fx:id="listTitle" layoutX="8.0" layoutY="14.0" onAction="#listTitleEdited" prefHeight="25.0" prefWidth="293.0" text="New list">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </TextField>
+      <TableView fx:id="table" layoutX="8.0" layoutY="59.0" prefHeight="408.0" prefWidth="606.0">
+        <columns>
+          <TableColumn fx:id="colItem" prefWidth="444.0" text="Item" />
+          <TableColumn fx:id="colDate" prefWidth="104.0" text="Due date" />
+            <TableColumn fx:id="colStatus" prefWidth="57.0" text="Status" />
+        </columns>
+      </TableView>
+      <ToolBar layoutX="1.0" layoutY="479.0" prefHeight="35.0" prefWidth="624.0">
+         <items>
+            <MenuButton mnemonicParsing="false" popupSide="TOP" text="Item menu">
+              <items>
+                  <MenuItem mnemonicParsing="false" onAction="#itemAdded" text="Add item" />
+                <MenuItem mnemonicParsing="false" onAction="#deleteItemButtonClicked" text="Delete item" />
+              </items>
+            </MenuButton>
+            <MenuButton mnemonicParsing="false" popupSide="TOP" text="List menu">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#showCompleteButtonClicked" text="Show complete" />
+                  <MenuItem mnemonicParsing="false" onAction="#showIncompleteButtonClicked" text="Show incomplete" />
+                  <MenuItem mnemonicParsing="false" onAction="#showAllSelected" text="Show all" />
+                  <MenuItem mnemonicParsing="false" onAction="#deleteListButtonClicked" text="Delete list" />
+                  <MenuItem mnemonicParsing="false" onAction="#saveListButtonClicked" text="Save list externally" />
+               </items>
+            </MenuButton>
+         </items>
+      </ToolBar>
+      <Button layoutX="570.0" layoutY="10.0" mnemonicParsing="false" onAction="#helpButtonClicked" text="Help" />
+      <Button layoutX="522.0" layoutY="10.0" mnemonicParsing="false" onAction="#loadButtonClicked" text="Load" />
+   </children>
+</AnchorPane>

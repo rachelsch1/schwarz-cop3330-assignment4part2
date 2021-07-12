@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="353.0" prefWidth="578.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ucf.assignments.HelpSceneController">
+   <children>
+      <ScrollPane prefHeight="353.0" prefWidth="600.0">
+         <content>
+            <AnchorPane>
+               <children>
+                  <GridPane layoutY="26.0" prefHeight="2192.0" prefWidth="587.0">
+                    <columnConstraints>
+                      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="289.0" minWidth="10.0" prefWidth="207.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="386.0" minWidth="10.0" prefWidth="380.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints maxHeight="283.0" minHeight="7.0" prefHeight="52.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="431.0" minHeight="10.0" prefHeight="27.0" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="620.0" minHeight="10.0" prefHeight="144.0" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="737.0" minHeight="10.0" prefHeight="136.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="710.0" minHeight="10.0" prefHeight="42.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="701.0" minHeight="10.0" prefHeight="162.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="765.0" minHeight="10.0" prefHeight="143.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="765.0" minHeight="10.0" prefHeight="151.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="765.0" minHeight="10.0" prefHeight="153.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="765.0" minHeight="10.0" prefHeight="159.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="765.0" minHeight="10.0" prefHeight="78.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="765.0" minHeight="10.0" prefHeight="78.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="765.0" minHeight="10.0" prefHeight="78.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="765.0" minHeight="10.0" prefHeight="78.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../../../../../Pictures/listname.PNG" />
+                           </image>
+                        </ImageView>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="This is the list's title. To edit, simply click the box and write the title of your list." wrappingWidth="345.2265625" GridPane.columnIndex="1" />
+                        <ImageView fitHeight="37.0" fitWidth="92.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1">
+                           <image>
+                              <Image url="@../../../../../../../../../Pictures/itemmenu.PNG" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="33.0" fitWidth="98.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="4">
+                           <image>
+                              <Image url="@../../../../../../../../../Pictures/listmenu.PNG" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="128.0" fitWidth="99.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="5">
+                           <image>
+                              <Image url="@../../../../../../../../../Pictures/showcomplete.PNG" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="131.0" fitWidth="108.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="6">
+                           <image>
+                              <Image url="@../../../../../../../../../Pictures/showincomplete.PNG" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="134.0" fitWidth="102.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="7">
+                           <image>
+                              <Image url="@../../../../../../../../../Pictures/showall.PNG" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="137.0" fitWidth="98.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="8">
+                           <image>
+                              <Image url="@../../../../../../../../../Pictures/deletelist.PNG" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="141.0" fitWidth="101.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="9">
+                           <image>
+                              <Image url="@../../../../../../../../../Pictures/savelist.PNG" />
+                           </image>
+                        </ImageView>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="This button holds all the functions for editing the items in your list." GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Adds an item to your list." GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Deletes selected item from your list." GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="This button holds all the functions for editing the list as a whole." GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Show only the completed items in the list. Attempting to add an item in this mode will return the list to &quot;Show all&quot; mode." wrappingWidth="359.1796875" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Show only the incomplete items in the list. Attempting to add an item in this mode will return the list to &quot;Show all&quot; mode." wrappingWidth="359.810546875" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Show both complete and incomplete items." wrappingWidth="364.162109375" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Delete all content from the list." wrappingWidth="171.130859375" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Save list to a text file in your computer. It is advised to do this before exiting the app, as content will not be saved automatically. Upon selecting this option, a dialog will open and prompt you to input the directory in which you would like the file to be saved." wrappingWidth="358.103515625" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+                        <ImageView fitHeight="47.0" fitWidth="184.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="10">
+                           <image>
+                              <Image url="@../../../../../../../../../Pictures/newitem.PNG" />
+                           </image>
+                        </ImageView>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Upon selecting &quot;Add item,&quot; a new row will appear in the list. To edit the item description, double click the row's Item cell and it will become a text box." wrappingWidth="374.87109375" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="To edit the item's due date, open the selector and select the date you would like the itenm completed by." wrappingWidth="364.13671875" GridPane.columnIndex="1" GridPane.rowIndex="11" />
+                        <ImageView fitHeight="31.0" fitWidth="49.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="13">
+                           <image>
+                              <Image url="@../../../../../../../../../Pictures/load.PNG" />
+                           </image>
+                        </ImageView>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Load a todo list that was previously saved to a text file using this app. Be sure to save the list you have open currently before selecting this." wrappingWidth="365.314453125" GridPane.columnIndex="1" GridPane.rowIndex="13" />
+                        <ImageView fitHeight="61.0" fitWidth="134.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="11">
+                           <image>
+                              <Image url="@../../../../../../../../../Pictures/duedate.PNG" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="56.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="12">
+                           <image>
+                              <Image url="@../../../../../../../../../Pictures/status.PNG" />
+                           </image>
+                        </ImageView>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Once an item is complete, select the item's check box to mark it as such." wrappingWidth="364.13671875" GridPane.columnIndex="1" GridPane.rowIndex="12" />
+                        <ImageView fitHeight="93.0" fitWidth="113.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="2">
+                           <image>
+                              <Image url="@../../../../../../../../../Pictures/additem.PNG" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="103.0" fitWidth="102.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="3">
+                           <image>
+                              <Image url="@../../../../../../../../../Pictures/deleteitem.PNG" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </GridPane>
+                  <Text layoutX="540.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="for: Rey" />
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>
